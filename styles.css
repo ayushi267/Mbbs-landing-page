@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: url('sam-moghadam-2rrsfMN4hn8-unsplash.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.about, .benefits, .destinations, .contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.benefits i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.benefits h4 {
+    font-size: 1.3rem;
+}
+
+.destinations img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.contact input, .contact button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.contact button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+.destinations {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.destinations h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.col-md-3 {
+    flex: 1 1 250px; /* Ensures responsive behavior */
+    max-width: 250px;
+    text-align: center;
+}
+
+.col-md-3 img {
+    width: 100%; 
+    height: 180px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.col-md-3 p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-3 {
+        max-width: 80%;
+    }
+}
